@@ -1,0 +1,295 @@
+/* CSS Document  */
+/* Project name: TP Bootstrap */
+/* File name: styles.css */
+/* Description: Hoja de estilos global */
+/* Creation date: Junio de 2016 */
+/* Author: Name Lastname */
+/* Author's eMail: username@server.com */
+/********** FONTS (Google-fonts) **********/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
+body {
+  font-family: "Roboto Slab";
+  margin: 0; }
+
+figure {
+  margin: 0;
+  line-height: 0; }
+
+a {
+  outline: none !important; }
+
+/*************************************/
+/*=========     GLOBAL     =========*/
+/***********************************/
+.section-title {
+  font: 700 40px "Montserrat";
+  margin: 0;
+  color: #333;
+  text-transform: uppercase; }
+  .section-title + p {
+    font: 400 italic "Droid Serif";
+    margin: 10px 0 75px; }
+  .section-title.white {
+    color: #fff; }
+    .section-title.white + p {
+      color: #fff; }
+
+/*************************************/
+/*=========     HEADER     =========*/
+/***********************************/
+.navbar-default {
+  background-color: #216de0;
+  border: none; }
+  .navbar-default .navbar-brand {
+    color: #fed136;
+    font-family: "Kaushan Script"; }
+    .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand:focus {
+      color: #fed136 !important; }
+  .navbar-default .navbar-toggle {
+    border: none;
+    background-color: #fed136;
+    color: #fff; }
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:focus {
+      background-color: #fed136 !important; }
+  .navbar-default .navbar-nav > li > a {
+    font-family: "Montserrat";
+    color: #fff;
+    text-transform: uppercase; }
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+      color: #fed136 !important; }
+  .navbar-default .navbar-nav > .active > a {
+    color: #fed136;
+    background-color: transparent !important; }
+
+/*************************************/
+/*=========     BANNER     =========*/
+/***********************************/
+#banner {
+  background: url(../images/banner.jpg) center center/cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  height: 70vh; }
+
+/***************************************/
+/*=========     inicio     =========*/
+/*************************************/
+#inicio {
+  padding-top: 30px;
+  text-align: center;
+  background: #216de0; }
+  #inicio p {
+    color: #fff; }
+
+/****slider*****/
+.slider {
+  width: 66%;
+  margin: auto;
+  overflow: hidden;
+  text-align: center; }
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: cambio 20s infinite;
+  animation-direction: alternate; }
+
+.slider li {
+  list-style: none;
+  width: 100%; }
+
+.slider img {
+  width: 58%;
+  border: 2px solid black; }
+
+@keyframes cambio {
+  0% {
+    margin-left: 0; }
+  20% {
+    margin-left: 0; }
+  25% {
+    margin-left: -100%; }
+  45% {
+    margin-left: -100%; }
+  50% {
+    margin-left: -200%; }
+  70% {
+    margin-left: -200%; }
+  75% {
+    margin-left: -300%; }
+  100% {
+    margin-left: -300%; } }
+/****slider*****/
+/***************************************/
+/*=========    catalogo   =========*/
+/*************************************/
+#catalogo {
+  padding-top: 30px;
+  text-align: center;
+  background-color: #b92d2c; }
+  #catalogo h1 {
+    text-align: center;
+    color: #fff; }
+  #catalogo i {
+    font-size: 40px;
+    color: black;
+    display: inline-block; }
+
+.galeria {
+  width: 90%;
+  margin: auto;
+  list-style: none;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .galeria li {
+    margin: 5px; }
+  .galeria img {
+    width: 150px;
+    height: 100px; }
+
+.modal1 {
+  display: none; }
+
+.modal1:target {
+  display: block;
+  position: fixed;
+  transition: all 0.5;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  .modal1:target h3 {
+    color: red;
+    font-size: 30px;
+    text-align: center;
+    margin: 60px 0; }
+
+.modal2 {
+  display: none;
+  animation: fade-in-down;
+  -webkit-transition-duration: 5s;
+  -webkit-transition-timing-function: ease-down; }
+
+.modal2:target {
+  display: block; }
+
+.imagen {
+  height: 58%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.imagen a {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  margin: 0 14px; }
+  .imagen a img {
+    width: 500px;
+    height: 100%;
+    max-width: 100%;
+    border: 7px solid #fff;
+    box-sizing: border-box; }
+  .imagen a a:nth-child(2) {
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2; }
+
+.cerrar img {
+  font-size: 14px; }
+
+/*********animaciones*************/
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown; }
+
+.animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(20%, 0, 0);
+    transform: translate3d(0, 20%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+/****************************************/
+/*=========     PORTFOLIO     =========*/
+/**************************************/
+/************************************/
+/*=========     ABOUT     =========*/
+/**********************************/
+/***********************************/
+/*=========     TEAM     =========*/
+/*********************************/
+/**************************************/
+/*=========     CONTACT     =========*/
+/************************************/
+.section-title {
+  margin-top: 0; }
+
+.text-muted {
+  padding: 10px; }
+
+#contact-form .form-control {
+  padding: 0 20px;
+  height: 65px;
+  margin-bottom: 20px;
+  font-size: 16px; }
+#contact-form textarea.form-control {
+  padding: 20px;
+  height: 235px; }
+#contact-form .btn-lg {
+  padding: 20px 30px;
+  color: #fff;
+  border-radius: 8;
+  -webkit-border-radius: 8; }
+
+/************************************/
+/*=========     FOOTER     =========*/
+/************************************/
+/******************************************/
+/*=========     MEDIA-QUERIES    =========*/
+/******************************************/
+@media (min-width: 768px) {
+  .time-line::before {
+    left: 50%; }
+  .time-line li:nth-child(even):after {
+    content: '';
+    display: block;
+    clear: both; }
+  .time-line li:nth-child(even) .time-line-text {
+    float: right;
+    text-align: left;
+    padding: 0 50px 0 20px; }
+
+  .time-line-img {
+    width: 120px;
+    height: 120px;
+    left: 50%;
+    margin-left: -60px; }
+
+  .time-line-text {
+    width: 40%;
+    text-align: right;
+    padding: 0 20px 0 50px; } }
+@media (min-width: 992px) {
+  .intro-text {
+    padding: 250px 0 100px; } }
+
+/*# sourceMappingURL=styles.css.map */

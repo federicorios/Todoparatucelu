@@ -1,0 +1,353 @@
+/*************************************/
+/*=========     GLOBAL     =========*/
+/***********************************/
+%contenedores{
+	padding: 100px 0;
+}
+
+.section-title{
+	font: 700 40px $third-font;
+	margin: 0;
+	color: #333;
+	text-transform: uppercase;
+	+ p{
+		font: 400 italic $fourth-font;
+		margin: 10px 0 75px;
+	}
+	&.white{
+		color: #fff;
+		+ p{
+			color: #fff;
+		}
+	}
+}
+
+/*************************************/
+/*=========     HEADER     =========*/
+/***********************************/
+.navbar-default{
+	background-color: #216de0;
+	border: none;
+
+	.navbar-brand{
+		color: $main-color;
+		font-family: $second-font;
+		&:hover,
+		&:active,
+		&:focus{
+			color: $main-color !important;
+		}
+	}
+
+	.navbar-toggle{
+		border: none;
+		background-color: $main-color;
+		color: #fff;
+		&:hover,
+		&:active,
+		&:focus{
+			background-color: $main-color !important;
+		}
+	}
+
+	.navbar-nav{
+		> li{
+			> a{
+				font-family: $third-font;
+				color: #fff;
+				text-transform: uppercase;
+				&:hover,
+				&:active,
+				&:focus{
+					color: $main-color !important;
+				}
+			}
+		}
+		> .active{
+			> a{
+				color: #fed136;
+				background-color: transparent !important;
+			}
+		}
+	}
+}
+
+
+/*************************************/
+/*=========     BANNER     =========*/
+/***********************************/
+#banner{
+	  background: url(../images/banner.jpg) center center/cover;
+	  background-attachment: fixed;
+	  background-repeat: no-repeat;
+	  color: white;
+	  text-align: center;
+	  height: 70vh;
+
+	  }
+
+
+/***************************************/
+/*=========     inicio     =========*/
+/*************************************/
+
+#inicio{
+	padding-top: 30px;
+	text-align: center;
+	background: #216de0;
+	p{
+		color: #fff;
+	}
+}
+
+/****slider*****/
+
+.slider{
+	width: 66%;
+	margin: auto;
+	overflow: hidden;
+	text-align: center;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+
+	animation: cambio 20s infinite;
+	animation-direction: alternate;
+}
+
+.slider li {
+	list-style: none;
+	width: 100%;
+}
+
+.slider img {
+	width: 58%;
+	border: 2px solid black;
+}
+
+@keyframes cambio {
+	0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+
+}
+/****slider*****/
+
+
+
+
+/***************************************/
+/*=========    catalogo   =========*/
+/*************************************/
+#catalogo{
+	padding-top: 30px;
+	text-align: center;
+	background-color: #b92d2c;
+
+	h1{
+		text-align: center;
+		color: #fff;
+	}
+	i{
+		font-size: 40px;
+		color: black;
+		display: inline-block;
+	}
+}
+
+.galeria{
+	width: 90%;
+	margin: auto;
+	list-style: none;
+	padding: 20px;
+	box-sizing: border-box;
+
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	
+	li{
+		margin: 5px;
+		
+
+	}
+
+	img{
+		width: 150px;
+		height: 100px;
+	}
+}
+
+.modal1{
+	display: none;
+}
+
+.modal1:target {
+	display: block;
+	position: fixed;
+	transition: all 0.5;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	h3{
+		color: red;
+		font-size: 30px;
+		text-align: center;
+		margin: 60px 0;
+	}
+}
+
+.modal2{
+	display: none;
+	animation: fade-in-down;
+	-webkit-transition-duration: 5s;
+-webkit-transition-timing-function:ease-down;
+}
+
+.modal2:target {
+	display: block;
+
+}
+
+
+.imagen{
+	height: 58%;
+	width: 100%;
+
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+
+.imagen a {
+		color: white;
+		font-size: 30px;
+		text-decoration: none;
+		margin: 0 14px;	
+		
+		img{
+			width: 500px;
+			height: 100%;
+			max-width: 100%;
+			border: 7px solid #fff;
+			box-sizing: border-box;
+		}
+		a:nth-child(2){
+			margin: 0;
+			height: 100%;
+			flex-shrink: 2;
+		}
+
+
+}
+
+.cerrar{
+		img{
+			font-size: 14px;
+		}	
+}
+
+
+
+/*********animaciones*************/
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+.animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
+@keyframes fadeInDown{
+
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(20%, 0, 0);
+    transform: translate3d(0, 20%, 0);
+}
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;}
+}
+
+
+
+
+/****************************************/
+/*=========     PORTFOLIO     =========*/
+/**************************************/
+
+
+/************************************/
+/*=========     ABOUT     =========*/
+/**********************************/
+
+
+/***********************************/
+/*=========     TEAM     =========*/
+/*********************************/
+
+
+/**************************************/
+/*=========     CONTACT     =========*/
+/************************************/
+#Contact{
+  
+}
+
+.section-title{
+    
+    margin-top: 0;
+}
+.text-muted{
+    
+    padding: 10px;
+}
+
+#contact-form{
+  .form-control{
+    padding: 0 20px;
+    
+    height: 65px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  textarea{
+    &.form-control{
+      padding: 20px;
+      height: ((65*3)+(20*2))*1px;
+    }
+  }
+  .btn-lg{
+    padding: 20px 30px;
+    color: #fff;
+    @include b-ra(8);
+    }
+}
+
+
+
+/************************************/
+/*=========     FOOTER     =========*/
+/************************************/

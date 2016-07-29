@@ -240,17 +240,19 @@ a {
 /**************************************/
 /*=========     CONTACT     =========*/
 /************************************/
-.section-title {
-  margin-top: 0; }
-
-.text-muted {
-  padding: 10px; }
+#Contact {
+  background: url(../images/celulares.jpg) center center/cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  height: 81vh; }
 
 #contact-form .form-control {
   padding: 0 20px;
   height: 65px;
   margin-bottom: 20px;
-  font-size: 16px; }
+  font-size: 16px;
+  background-color: #802d2d; }
 #contact-form textarea.form-control {
   padding: 20px;
   height: 235px; }
@@ -263,6 +265,54 @@ a {
 /************************************/
 /*=========     FOOTER     =========*/
 /************************************/
+.footer {
+  background: #216de0; }
+  .footer .container {
+    height: 100%; }
+  .footer .text-center {
+    padding: 20px; }
+  .footer li:nth-child(1) {
+    background: #334681; }
+  .footer li:nth-child(2) {
+    background: black; }
+  .footer li:nth-child(3) {
+    background: #5373A6; }
+  .footer li:nth-child(4) {
+    background: #03639F; }
+  .footer li:nth-child(5) {
+    background: #B41D12; }
+  .footer div p {
+    color: white; }
+
+.iconos1 {
+  font-size: 25px;
+  color: white;
+  line-height: 38px; }
+
+.iconos {
+  padding: 0; }
+
+.iconos li {
+  display: inline-block;
+  margin: 6px;
+  border-radius: 50%;
+  border: 1px solid white;
+  height: 40px;
+  width: 40px; }
+  .iconos li a {
+    display: block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    transition: 600ms;
+    -ms-transition: 600ms;
+    -webkit-transition: 600ms; }
+    .iconos li a:hover {
+      transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      background-color: #216de0;
+      color: #222; }
+
 /******************************************/
 /*=========     MEDIA-QUERIES    =========*/
 /******************************************/

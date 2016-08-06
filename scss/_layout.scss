@@ -30,7 +30,7 @@
 	border: none;
 
 	.navbar-brand{
-		color: $main-color;
+		color: #802d2d;
 		font-family: $second-font;
 		&:hover,
 		&:active,
@@ -41,7 +41,7 @@
 
 	.navbar-toggle{
 		border: none;
-		background-color: $main-color;
+		background-color:  #802d2d;
 		color: #fff;
 		&:hover,
 		&:active,
@@ -322,29 +322,7 @@
 
 
 
-#contact-form{
 
-  .form-control{
-    padding: 0 20px;    
-    height: 65px;
-    margin-bottom: 20px;
-    font-size: 16px;
-    background-color: #802d2d; 
-
-  }
-  textarea{
-    &.form-control{
-
-      padding: 20px;
-      height: ((65*3)+(20*2))*1px;
-    }
-  }
-  .btn-lg{
-    padding: 20px 30px;
-    color: #fff;
-    @include b-ra(8);
-    }
-}
 
 
 

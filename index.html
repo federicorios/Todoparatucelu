@@ -23,7 +23,7 @@
 	<div class="navbar navbar-default navbar-fixed-top">	
 		<div class="container">	
 			<div>			
-				 <a href="#" class ="navbar-brand" >Diseño Web</a>
+				 <a href="#" class ="navbar-brand" >Todo para tu celu</a>
 				 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-links">
 		         <i class="ion-navicon-round"></i>
 			</div>
@@ -31,13 +31,13 @@
 			<nav class="collapse navbar-collapse"id="nav-links">
 				<ul class="nav navbar-nav navbar-right">
 					<li>
-						<a href="#Portfolio">Portfolio</a> 
+						<a href="#Portfolio">Empresa</a> 
 				    </li>
 				    <li>
-						<a href="#about">Acerca de mi</a> 
+						<a href="#about">Catálogo</a> 
 				    </li>
 				    <li>
-						<a href="#Contact">Contactame</a> 
+						<a href="#Contact">Contacto</a> 
 				    </li>
 				</ul>
 			</nav>	
@@ -315,7 +315,7 @@
 <section id="Contact" class="separador">
 				<div class="container">
 				
-					<div class="col-xs-12 text-center">
+					<div class="col-xs-12 text-center" style="position: inherit;">
 						<h2 class="section-title">Contáctame</h2>
 						<p class="text-muted">Dejame un mensaje y te respondo a la brevedad.</p>
 					</div>
@@ -323,34 +323,34 @@
 
 					
 		
-	                <form action="contacto.php" method="post" class="col-md-12">
+	            <form action="contacto.php" method="post"  style="position: inherit;">
                    
-				    <div class="col-md-6">	
+				    <div class="col-md-6 col-lg-6"style="position: inherit;">
+	                    <input class="form-control" id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre completo" title="Ingrese su nombre" style="background-color: #802d2d;" required />
+	                    <br/>
+	        	                                       
+	                    <input class="form-control" id="email" name="email" type="text" placeholder="Ingrese su email" title="Ingrese su email" style="background-color: #802d2d;" required pattern="[^ @]*@[^ @]*"/>
+	                    <br/>
+	                    
+	                    <input class="form-control" id="telefono" name="telefono" type="text" placeholder="Ingrese su telefono" title="Ingrese su telefono" style="background-color: #802d2d;" required pattern="[0-9]+\S{6,}"/>
+	                    <br/>
 
-                    <input class="form-control" id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre completo" title="Ingrese su nombre" required />
-                    <br/>
-        
-                                        
-                    <input class="form-control" id="email" name="email" type="text" placeholder="Ingrese su email" title="Ingrese su email" required pattern="[^ @]*@[^ @]*"/>
-                    <br/>
+	                    <textarea class="form-control" id="consulta" name="consulta" placeholder="Ingrese su consulta" title="Ingrese su consulta" style="background-color: #802d2d;" ></textarea>
 
-
-                    
-                    <input class="form-control" id="telefono" name="telefono" type="text" placeholder="Ingrese su telefono" title="Ingrese su telefono" required pattern="[0-9]+\S{6,}"/>
-                    <br/>
+	                  	<input type="submit" value="Enviar" id="submit"class="btn-lg" style="background-color: #802d2d;">
                     </div>
 
-					<div class="col-md-6">
+						
 
-                    <textarea class="form-control" id="consulta" name="consulta" placeholder="Ingrese su consulta" title="Ingrese su consulta" ></textarea>
-                    </div>
-                    <br/>
+	   
+	                
+	                <div class="col-md-6 col-lg-6"style="position: inherit;">
+	                	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.7824521687585!2d-58.39865728517086!3d-34.761072573347114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2eaccd57035%3A0x3bf821540daac53e!2sAlsina+2057-2099!5e0!3m2!1ses!2sar!4v1469819408414" width="400" height="300" frameborder="1" style="border:1" allowfullscreen></iframe>
+	                </div>
+	                    
 
-					<div class="col-md-12">
-                    <input type="submit" value="Enviar" id="submit"class="btn-lg">
-                    
                     </div>
-                    </div>
+                  </div>
                 </form>
         
 	</div>
@@ -362,16 +362,16 @@
 
 <section class="footer" id="footer">
 	<div class="container">
-		<div class="col-md-4 col-lg-4 col-sm-4  text-center">
+		<div class="col-md-4 col-lg-4 col-sm-4  text-center" style="position: inherit;">
 			<p>Contacto</p>
 			<p>Tel:42361907</p>
 			<p>Cel:1537006469</p>
 		</div>
 
-        <div class="col-md-4 col-lg-4 col-sm-4  text-center">      	
+        <div class="col-md-4 col-lg-4 col-sm-4  text-center" style="position: inherit;">      	
            <ul class="iconos">
                <li>
-                   <a href="https://www.facebook.com/federico.rios.319"><span class="ion-social-facebook iconos1"> </span></a> 
+                   <a href="https://www.facebook.com/todotodoparatucelu/?fref=ts"><span class="ion-social-facebook iconos1"> </span></a> 
                </li>
                <li>
                		<a href="https://github.com/federicorios"><span class="ion-social-github iconos1"> </span></a>
@@ -390,7 +390,7 @@
 
         
 
-        <div class="col-md-4 col-lg-4 col-sm-4 text-center">
+        <div class="col-md-4 col-lg-4 col-sm-4 text-center" style="position: inherit;">
         	<p>Dirección:</p>
 			<p>Arias 863,Jose Marmol, Almirante Brown</p>
 			<p>Buenos Aires</p>
